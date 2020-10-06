@@ -1,0 +1,213 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #1976D2;
+    --primary-alpha-color: #2962FF;
+    --primary-text-color: #263238;
+    --secondary-text-color: #616161;
+    --off-white-text-color: #E3F2FD;
+    --background-white: #FAFAFA;
+}
+
+/* Containers */
+
+body {
+    margin: 0;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    background-color: var(--background-white);
+    border: 0.0625rem solid var(--secondary-text-color);
+    border-radius: 0.25rem;
+    padding: 2rem;
+    width: 25rem;
+    height: 25rem;
+}
+
+#sign-in {
+    display: flex;
+}
+
+#sign-up {
+    display: none;
+}
+
+/* Logo */
+
+.logo {
+    position: relative;
+    width: 7.5rem;
+    height: 3rem;
+    margin: auto;
+}
+
+.blue-triangle {
+    position: absolute;
+    background-color: #303F9F99;
+    width: 3rem;
+    height: 3rem;
+    clip-path: polygon(50% 0, 0% 100%, 15% 100%, 50% 23%, 80% 89%, 20% 89%, 15% 100%, 100% 100%, 100% 100%);
+}
+
+.yellow-triangle {
+    position: absolute;
+    left: 1.5rem;
+    background-color: #FBC02D99;
+    width: 3rem;
+    height: 3rem;
+    clip-path: polygon(50% 0, 0% 100%, 15% 100%, 50% 23%, 80% 89%, 20% 89%, 15% 100%, 100% 100%, 100% 100%);
+}
+
+.green-triangle {
+    position: absolute;
+    left: 3rem;
+    background-color: #388E3C99;
+    width: 3rem;
+    height: 3rem;
+    clip-path: polygon(50% 0, 0% 100%, 15% 100%, 50% 23%, 80% 89%, 20% 89%, 15% 100%, 100% 100%, 100% 100%);
+}
+
+.red-triangle {
+    position: absolute;
+    left: 4.5rem;
+    background-color: #d32f2f99;
+    width: 3rem;
+    height: 3rem;
+    clip-path: polygon(50% 0, 0% 100%, 15% 100%, 50% 23%, 80% 89%, 20% 89%, 15% 100%, 100% 100%, 100% 100%);
+}
+
+/* Title */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: stretch;
+    margin: auto;
+}
+
+.title>h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.125rem;
+    color: var(--primary-text-color);
+}
+
+.title>h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+}
+
+/* Input */
+
+.outer-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1rem 0.5rem 0rem;
+    width: 100%;
+}
+
+.note {
+    color: var(--secondary-text-color);
+    font-size: 0.625rem;
+    padding: 0 0.5rem;
+}
+
+/* Text Input */
+
+input[type='button'] {
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    border: 0.0625rem solid var(--secondary-text-color);
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 2rem;
+}
+
+label {
+    position: absolute;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    color: var(--secondary-text-color);
+    transition: all 0.1s ease-in;
+    background-color: var(--background-white);
+}
+
+input:focus+label {
+    color: var(--primary-alpha-color);
+}
+
+input:focus {
+    outline-color: var(--primary-alpha-color);
+}
+
+input:not(:placeholder-shown)+label,
+input:focus+label {
+    transform: translateY(-1.25rem);
+    font-size: 0.75rem;
+}
+
+/* Button Input */
+
+.primary-button {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    color: var(--off-white-text-color);
+}
+
+.primary-button:hover {
+    background-color: var(--primary-alpha-color);
+}
+
+.secondary-button {
+    background-color: transparent;
+    padding: 0.5rem 0rem;
+    color: var(--primary-color);
+}
+
+.secondary-button:hover {
+    color: var(--primary-alpha-color);
+}

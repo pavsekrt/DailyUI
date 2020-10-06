@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="001.css">
+    <title>001</title>
+</head>
+
+<body>
+    <div class="center-content">
+        <div class="content-box" id="sign-in">
+            <div class="title">
+                <div class="logo">
+                    <div class="blue-triangle"></div>
+                    <div class="yellow-triangle"></div>
+                    <div class="green-triangle"></div>
+                    <div class="red-triangle"></div>
+                </div>
+                <h1>Sign in</h1>
+                <h2>to your account</h2>
+            </div>
+            <div class="outer-input">
+                <div class="input">
+                    <input type="email" name="Email" placeholder=" " id="email" required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="outer-input">
+                <div class="input">
+                    <input type="password" name="Password" placeholder=" " id="password" required>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="outer-input">
+                <div class="input">
+                    <input type="button" value="Create Account" class="secondary-button" onclick="set_open_window('sign-up');">
+                    <input type="button" value="Sign in" class="primary-button" onclick="msg_alert('Sign in');">
+                </div>
+            </div>
+        </div>
+        <div class="content-box" id="sign-up">
+            <div class="title">
+                <div class="logo">
+                    <div class="blue-triangle"></div>
+                    <div class="yellow-triangle"></div>
+                    <div class="green-triangle"></div>
+                    <div class="red-triangle"></div>
+                </div>
+                <h1>Create an Account</h1>
+            </div>
+            <div class="outer-input">
+                <div class="input">
+                    <input type="text" name="FirstName" placeholder=" " id="first-name" required>
+                    <label for="first-name">First Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="Last Name" placeholder=" " id="last-name" required>
+                    <label for="last-name">Last Name</label>
+                </div>
+            </div>
+            <div class="outer-input">
+                <div class="input">
+                    <input type="email" name="Email" placeholder=" " id="email" required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="outer-input">
+                <div class="input">
+                    <input type="password" name="Password" placeholder=" " id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="PasswordConfirm" placeholder=" " id="password-confirm" required>
+                    <label for="password-confirm">Confirm Password</label>
+                </div>
+            </div>
+            <div class="outer-input">
+                    <p class="note">* Password must be at least 8 characters and contain a mix of letters, numbers & symbols</p>
+            </div>
+            <div class="outer-input">
+                <div class="input">
+                    <input type="button" value="Sign in instead" class="secondary-button" onclick="set_open_window('sign-in');">
+                    <input type="button" value="Sign up" class="primary-button" onclick="msg_alert('Sign up');">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="001.js"></script>
+</footer>
+</html>
